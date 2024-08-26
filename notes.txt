@@ -1,0 +1,16 @@
+Already have flask installed, but steps on installing
+
+Install main core of project without virtual env
+    1.) pip3 install Flask 
+    2.) pip3 install flask-cors
+
+Set up project using virtual environment (Doing It This Way For Project)
+    1.) pip3 install pipenv 
+    2.) "pipenv shell" to set up virt env, take note of virt env location
+        -) to check for location again do pipenv --venv
+    3.) pipenv install
+            flask 
+            flask-cors 
+            python-dotenv
+            psycopg2-binary
+    4.) to run backend do => "flask run"
