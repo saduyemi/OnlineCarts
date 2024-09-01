@@ -21,6 +21,7 @@
     border: 1px none green;
     height: 75%;
     width: 10%;
+    max-width: 69px;
     margin-right: 1rem;
 }
 
