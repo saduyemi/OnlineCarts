@@ -19,3 +19,36 @@
 #plusBtn:hover {
     background-color: darkgray;
 }
+
+#folderContainer > li {
+    display: block;
+    border: 1px none black;
+    border-bottom: 2px solid black;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#folderContainer > li > p {
+    display: inline-block;
+    margin-right: 1rem;
+    width: 220px;
+}
+
+#folderContainer > li:hover {
+    background-color: lightgray;
+}
+
+#folderContainer > li > button {
+    display: inline-block;
+    border: 1px none black;
+    border-radius: 5px;
+    margin-left: 5rem;
+    width: 55px;
+    height: 20px;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+#folderContainer > li > button:hover {
+    background-color: white;
+}

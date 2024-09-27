@@ -1,0 +1,91 @@
+.addContainer {
+    position: fixed;
+    width: 65vw;
+    height: 70vh;
+    top: 10%;
+    left: 20%;
+    background-color: white;
+    box-shadow: 10px 10px 1010px black;
+    border: 1px solid none;
+    border-radius: 10px;
+}
+
+.close {
+    font-size: 35px;
+    float: right;
+    cursor: pointer;
+}
+
+.addContent {
+    padding: 0.5rem;
+}
+
+.addContent > input[type=text] {
+    margin-top: 5rem;
+    width: 90%;
+    height: 70px;
+    border: 1px none black;
+    border-radius: 5px;
+    background-color: beige;
+    display: block;
+}
+
+.addContent > button {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px none black;
+    border-radius: 5px;
+    background-color: lightgreen;
+}
+
+.editContent {
+    position: fixed;
+    width: 65vw;
+    height: 70vh;
+    top: 10%;
+    left: 20%;
+    background-color: white;
+    box-shadow: 10px 10px 1010px black;
+    border: 1px solid none;
+    border-radius: 10px;
+}
+
+.editContent > input[type=text] {
+    margin-top: 5rem;
+    width: 90%;
+    height: 70px;
+    border: 1px none black;
+    border-radius: 5px;
+    background-color: beige;
+    display: block;
+}
+
+.confirm {
+    width: 105px;
+    height: 50px;
+    border: 1px none black;
+    border-radius: 10px;
+    margin-top: 2.5rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.confirm:hover {
+    background-color: lightgreen;
+}
+
+.delete {
+    width: 105px;
+    height: 50px;
+    border: 1px none black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: lightblue;
+}

@@ -1,0 +1,42 @@
+.addItemContainer {
+    position: fixed;
+    width: 65vw;
+    height: 70vh;
+    top: 10%;
+    left: 20%;
+    background-color: white;
+    box-shadow: 10px 10px 1010px black;
+    border: 1px solid none;
+    border-radius: 10px;
+}
+
+.close {
+    font-size: 35px;
+    float: right;
+    cursor: pointer;
+}
+
+.addItemContent {
+    padding: 0.5rem;
+}
+
+.addItemContent > input[type=text] {
+    margin-top: 2.5rem;
+    width: 90%;
+    height: 70px;
+    border: 1px none black;
+    border-radius: 5px;
+    background-color: beige;
+    display: block;
+}
+
+.addItemContent > button {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px none black;
+    border-radius: 5px;
+    background-color: lightgreen;
+}

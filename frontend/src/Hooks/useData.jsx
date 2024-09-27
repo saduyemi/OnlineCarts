@@ -11,8 +11,9 @@ async function getData() {
         if (response.status >= 400) { throw new Error("No Good"); }
 
         const data = await response.json();
-        console.log(data);
-        return {data, completed: true};
+        
+        console.log(data['carts']);
+        return {data: data['carts'], completed: true};
     }
     catch (err) {
         console.log(err);

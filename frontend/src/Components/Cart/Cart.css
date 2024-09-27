@@ -1,0 +1,16 @@
+.itemsContainer > li {
+    display: block;
+    border: 1px none black;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+}
+
+.itemsContainer > li > p {
+    display: inline-block;
+    margin-right: 2rem;
+    width: 200px;
+}
+
+.itemsContainer > li > button {
+    cursor: pointer;
+}

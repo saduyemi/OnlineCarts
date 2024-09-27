@@ -38,7 +38,7 @@ function App() {
             <Route path='/signup' element={<Signup/>} />
             <Route path='/' element={defaultPath} />
             <Route path='/menu' element={<Menu />} />
-            <Route path='/shoppingcart' element={<Cart/>} />
+            <Route path='/shoppingcart/:cartID' element={<Cart/>} />
           </Routes>
         </Router>
       </LoginContext.Provider>
