@@ -114,16 +114,27 @@ def get_folders(id):
             cursor.execute(''' 
                 SELECT * FROM FOLDERS
                 WHERE userid=%s
+                ORDER BY FolderID
             ''', (int(id),))
             
             folders = []
+            rows = cursor.fetchall()
 
-            for row in cursor.fetchall():
-                folders.append({"folderID": row[0], "folderName": row[2]})
+            for row in rows:
+                sql = '''
+                    SELECT SUM(ItemPrice) FROM Items
+                    WHERE FolderID=%s
+                '''
+                cursor.execute(sql, [row[0]])
+                totalCost = cursor.fetchall()[0]
+                
+                folders.append({"folderID": row[0], "folderName": row[2], "sum": totalCost[0]})
             
             return (jsonify({"carts": folders}), 200)
+        
         except Exception as e:
             return (jsonify({"message": str(e)}), 404)
+        
     else:
         return (jsonify({"message": "No User ID"}), 404)
 
@@ -133,11 +144,13 @@ def get_items(folder_id):
         cursor.execute(''' 
             SELECT * FROM ITEMS
             WHERE folderid=%s
+            ORDER BY ItemID;
         ''', (int(folder_id),))
 
         items = []
+        rows = cursor.fetchall()
 
-        for row in cursor.fetchall():
+        for row in rows:
             items.append({"itemID": row[0], "itemName": row[2], "itemPrice": row[3]})
 
         return (jsonify({"items": items}), 200)
